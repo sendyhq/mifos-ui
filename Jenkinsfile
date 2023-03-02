@@ -12,11 +12,6 @@ pipeline {
     stages {
         
         stage('Docker Build & Push Image') {
-            when {
-                anyOf {
-                    branch "master"; branch "dev"
-                }
-            }
             steps {
               script {
 
