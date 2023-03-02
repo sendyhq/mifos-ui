@@ -18,6 +18,9 @@ pipeline {
                 if(env.BRANCH_NAME == "master"){
                     env.ENV_TAG = "prod"
                 }
+                if(env.BRANCH_NAME == "dev") {
+                    env.ENV_TAG = "dev"
+                }
 
                  sh '''
                     IMAGE_TAG="${ENV_TAG}_$(date +%Y-%m-%d-%H-%M)"
