@@ -22,7 +22,9 @@ pipeline {
                     env.ENV_TAG = "dev"
                 }
 
+
                  sh '''
+
                     IMAGE_TAG="${ENV_TAG}_$(date +%Y-%m-%d-%H-%M)"
                     IMAGE_NAME="${IMAGE_BASE_NAME}:${IMAGE_TAG}"
                     docker build  -f Dockerfile -t $IMAGE_NAME .
@@ -32,4 +34,7 @@ pipeline {
             }
         }
     }
+
 }
+
+
