@@ -17,7 +17,7 @@ export const environment = {
   baseApiUrls: window['env']['fineractApiUrls'] ||
     'https://fineract-api-test.sendyit.com',
   // For connecting to server running elsewhere set the base API URL
-  baseApiUrl: window['env']['baseApiUrl'] || 'https://fineract-api-test.sendyit.co',
+  baseApiUrl: window['env']['baseApiUrl'] || 'https://fineract-api-test.sendyit.com',
   allowServerSwitch: env.allow_switching_backend_instance,
   apiProvider: window['env']['apiProvider'] || '/fineract-provider/api',
   apiVersion: window['env']['apiVersion'] || '/v1',
