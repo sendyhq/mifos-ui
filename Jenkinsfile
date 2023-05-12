@@ -18,6 +18,9 @@ pipeline {
                 if(env.BRANCH_NAME == "master"){
                     env.ENV_TAG = "prod"
                 }
+                if(env.BRANCH_NAME == "your-pre-prod-branch-name-here") {
+                    env.ENV_TAG = "pre-prod"
+                }
                 if(env.BRANCH_NAME == "dev") {
                     env.ENV_TAG = "dev"
                 }
